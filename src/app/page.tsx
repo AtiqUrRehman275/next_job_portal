@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,7 +16,7 @@ export default function Home() {
         />
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
+            Get started with Next js Job Portal App by Atiq{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
               src/app/page.tsx
             </code>
@@ -49,6 +51,8 @@ export default function Home() {
           >
             Read our docs
           </a>
+
+          <Button><Link href={"/register"}>Register</Link></Button>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
